@@ -1,0 +1,11 @@
+optimizer_hparams:
+  batch_size: 2
+  lr_scheduler:
+    T_0: 20
+    eta_min: 1.0e-08
+    name: CosineAnnealingWarmRestarts
+  optimizer:
+    learning_rate: 0.001
+    name: AdamW
+    weight_decay: 1.0e-05
+  start_logging: true
